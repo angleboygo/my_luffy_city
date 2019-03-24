@@ -1,0 +1,22 @@
+INFO 2019-03-21 19:56:06,171 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 19:56:06,275 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-03-21 19:56:06,345 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 19:56:06,351 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 19:56:06,352 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 20:18:57,881 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 20:18:57,912 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-03-21 20:18:57,943 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 20:18:57,948 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 20:18:57,950 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 20:19:12,562 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 20:19:24,379 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 20:21:54,515 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 20:21:56,283 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 20:22:32,005 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 20:52:02,753 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-03-21 20:52:02,854 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-03-21 20:52:02,907 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 20:52:02,916 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2019-03-21 20:52:02,917 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+WARNING 2019-03-21 20:52:03,252 log 228 Not Found: /favicon.ico
+WARNING 2019-03-21 20:52:03,253 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1971
