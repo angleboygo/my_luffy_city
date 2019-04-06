@@ -27,7 +27,7 @@
                 <img src="../../assets/shopping.svg" alt>
                 <span><router-link to="/cart">购物车</router-link></span>
               </el-col>
-              <el-col v-if="is_login" class="study" :span="10"><span>登录</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span>注册</span></el-col>
+              <el-col v-if="is_login==false" class="study" :span="10"><span><router-link to="/login">登录</router-link></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class='header-register'><router-link to='/register'>注册</router-link></span></el-col>
              
               <div v-else>
                 <el-col class="study" :span="10">学习中心</el-col>
@@ -42,7 +42,7 @@
                     <el-dropdown-item>我的订单</el-dropdown-item>
                     <el-dropdown-item>我的优惠券</el-dropdown-item>
                     <el-dropdown-item>我的消息<b style='color'>0</b></el-dropdown-item>
-                    <el-dropdown-item>退出</el-dropdown-item>
+                     <el-dropdown-item><span @click="logout">退出登录</span> <i class="el-icon-arrow-right"></i></el-dropdown-item>
                   </el-dropdown-menu>
                 </el-dropdown>
               </el-col>
@@ -60,9 +60,26 @@ export default {
   name: "Headers",
   data() {
     return {
+      token:localStorage.token||sessionStorage.token,
       is_login:false,
     };
-  }
+  },
+  created(){
+    if(this.token){
+      this.is_login=true;
+
+    }else{
+      this.is_login=false;
+    }
+  },
+   methods:{
+      logout(){
+        localStorage.clear();
+        sessionStorage.clear();
+        this.is_login=false;
+        alert("退出登录成功");
+      }
+    }
 };
 </script>
 

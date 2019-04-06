@@ -1,6 +1,6 @@
 <template>
-    <div class='home'>
-        <Header/>
+    <div class='home' :current_page="current_page">
+        <Header />
         <Banner/>
         <Footer/>  
     </div>
@@ -16,14 +16,14 @@ export default {
     name:'Home',
     data() {
         return {
-
-        }
+             current_page:0,
+        };
     },
     components:{
         Header,
         Banner,
         Footer,
-    }
+    },
 }
 </script>
 
